@@ -1,4 +1,4 @@
-*.mustache linguist-language=HTML
+# *.mustache linguist-language=HTML
 
 src/** linguist-documentation=false
 src/** linguist-vendored=false
