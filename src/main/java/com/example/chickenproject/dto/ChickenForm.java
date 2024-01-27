@@ -1,5 +1,7 @@
 package com.example.chickenproject.dto;
 
+import com.example.chickenproject.entity.Chicken;
+
 public class ChickenForm {
     private String title;
     private String content;
@@ -15,5 +17,9 @@ public class ChickenForm {
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 '}';
+    }
+
+    public Chicken toEntity() {
+        return new Chicken(null, title, content);
     }
 }
